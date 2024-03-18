@@ -1,0 +1,276 @@
+.navigation {
+  padding: 1vw;
+  position: sticky;
+  top: 0;
+}
+
+.green-box{
+  /* background-color: #E3FCF7 ; */
+  padding: 2vw;
+  border-radius: 1vw;
+  width: 45%;
+  box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.3);
+}
+.htext{
+  line-height: 5vw;
+}
+.sideNav{
+  line-height: 8vh;
+  padding: 1vw 6vw 1vw 1vw;
+}
+.sideNav .sideNavLink{
+  text-decoration: none;
+  color: #2e2e2e;
+}
+.sideNav .sideNavLink:hover{
+  color: #00684A;
+}
+.displayMenuCard{
+  box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.3);
+  padding: 1vw;
+  border-radius: 0.5vw;
+  border-left: 9px solid #00684A;
+}
+.displayRowCard {
+  box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.3);
+  padding: 1vw;
+  width: 25vw;
+  height: 19vh;
+  border-radius: 0.5vw;
+  margin-bottom: 1vw; /* Adjust the margin between the height of the cards */
+  border-left: 9px solid #00684A;
+  background-color: white;
+
+  
+}
+.displayRowCard-spends {
+  box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.3);
+  padding: 1vw;
+  width: 40vw;
+  height: 24vh;
+  border-radius: 0.5vw;
+  margin-bottom: 1vw; /* Adjust the margin between the height of the cards */
+  border-left: 9px solid #00684A;
+  background-color: white;
+
+  
+}
+.displayRowCardMembers {
+  box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.3);
+  padding: 1vw 1vw 1vw 1vw;
+  /* height: 24vh; */
+  border-radius: 0.5vw;
+  margin-bottom: 1vw; /* Adjust the margin between the height of the cards */
+  border-left: 9px solid #00684A;
+  background-color: white;
+
+  
+}
+.memberTag{
+  background-color: #00684A;
+  color: white;
+  padding: 0.2vw 0.5vw;
+  width: 6vw;
+  display: flex;
+  border-radius: 0.2vw;
+  justify-content: center;
+}
+
+.box-l {
+  box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.3);
+  width: 30vw;  
+  border-radius: 1vw;
+  overflow-y: auto;
+  padding: 1vw;
+  height: 34vh;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.box-l::-webkit-scrollbar {
+  width: 8px;
+}
+
+.box-l::-webkit-scrollbar-track {
+  background: #e2dddd;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+
+}
+
+.box-l::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+.box-r{
+  padding-left: 3vw;
+  width: 70%;
+  border-radius: 1vw;
+  height: 74.5vh;
+  overflow-y: auto;
+  background-color: transparent;
+}
+
+.box-r::-webkit-scrollbar {
+  width: 8px;
+}
+
+.box-r::-webkit-scrollbar-track {
+  background: #e2dddd;
+}
+
+.box-r::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+.box-spends{
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.3);
+  padding: 1vw;
+  width: 14vw;
+  border-radius: 1vw;
+  overflow-y: auto;
+  height: 32vh;
+}
+.box-spends::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+.box-spends::-webkit-scrollbar-track {
+  background: #e2dddd;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.box-spends::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+.box-showBalance{
+  /* background-color: #00684A; */
+  padding: 1vw;
+  width: 13vw;
+  height: 30vh;
+  border-radius: 1vw;
+}
+.boxTotalBalance{
+  box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.3); 
+  padding: 1vw 1vw 1vw 1vw;
+  width: 13vw;
+  height: 30vh;
+  border-radius: 1vw;
+  /* background-color: white; */
+
+}
+.grassImg{
+  width: 9.5vw;
+}
+.spend-flower-img{
+  width: 12vw;
+}
+.flowerImg {
+  width: 11vw;
+  animation: rotate 10s linear infinite;
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logoImg{
+  width: 3vw;
+  animation: rotate 20s linear infinite;
+}
+/* Grid.css */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  text-align: center;
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+.bankDetailsWhiteBox{
+  width: 46%;
+  height: 80vh;
+  border-radius: 2vw;
+  padding: 1vw;
+  border: 1px solid  #aeaeae;
+}
+.membersDetailsScrollable{
+  background-color: transparent;
+  height: 72vh;
+  overflow-y: auto;
+
+}
+.membersDetailsScrollable::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+.membersDetailsScrollable::-webkit-scrollbar-track {
+  background: #e2dddd;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.membersDetailsScrollable::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+.bankDetailsBalanceBox{
+  padding: 1vw;
+  border-radius: 1vw;
+}
+.addCatBox{
+  background-color: white;
+  border: 1px solid  #aeaeae;
+  width: 27vw;
+  height: 80vh;
+  border-radius: 1vw;
+}
+.addCatList{
+  background-color: transparent;
+  height: 32vw;
+  overflow-y: auto;
+}
+.addCatList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.addCatList::-webkit-scrollbar-track {
+  background: #e2dddd;
+}
+
+.addCatList::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+.addCatSearch{
+  padding: 0.8vw;
+  border-radius: 5vw 0vw 0vw 5vw;
+  border: 2px solid #aeaeae;
+  outline-color: #00684A;
+  width: 19vw;
+}
+.addCatButton{
+  border-radius: 0vw 5vw 5vw 0vw;
+  padding: 0.5vw 2vw;
+  border: none;
+  background-color: #00684A;
+  color: white;
+}
+.addCatButton:hover{
+  background-color: #008660;
+}
