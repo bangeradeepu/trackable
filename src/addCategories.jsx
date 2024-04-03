@@ -58,7 +58,7 @@ const addCategories = ({serverUrl}) => {
             try {
                 const occassionDataResponse = await axios.get(`${serverUrl}/api/getOccassion`)
                 setOccassionData(occassionDataResponse.data);
-                console.log(occassionDataResponse.data);
+                
             } catch (error) {
                 console.error(error)
             }

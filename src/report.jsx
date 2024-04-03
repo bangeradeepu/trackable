@@ -36,7 +36,6 @@ const Report = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
         );
         setBankFetch(true);
         const currentBalance = bankDetailsResponse.data[0].balance;
-        console.log(currentBalance);
         // Calculate previous balance
         const prevBalance =
           currentBalance + totalSpendAmount - totalDonationAmount;
@@ -68,7 +67,6 @@ const Report = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
         ];
         setYears(uniqueYears);
 
-        console.log(spendsResponse.data);
         
       } catch (error) {
         console.error(error);
@@ -92,7 +90,6 @@ const Report = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
         ];
         setYears(uniqueYears);
         setFetchDonation(true);
-        console.log(donationResponse.data);
       } catch (error) {
         console.error(error);
       }

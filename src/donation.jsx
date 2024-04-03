@@ -317,7 +317,6 @@ useEffect(() => {
         `${serverUrl}/api/getOccassion`
       );
       setOccassionData(occassionDataResponse.data);
-      console.log(occassionDataResponse.data);
       setOccassionFetch(true);
     } catch (error) {
       console.error(error);
@@ -472,7 +471,7 @@ const handleAddDonationFirst = () => {
         <div>
           <div className="box-l">
             {yearGroups.map((year) => (
-              <div onClick={() => displayDonationsForYear(year)}>
+              <div key={year._id} onClick={() => displayDonationsForYear(year)}>
                 <div
                   className="displayMenuCard flex space-between mt-1 c-pointer"
                   key={year}
@@ -493,7 +492,7 @@ const handleAddDonationFirst = () => {
                 <div className="f12">Total Savings</div>
                 <div className="f25 mt-1">
                   {bankDetails.map((bank) => (
-                    <div>₹{bank.balance}</div>
+                    <div key={bank._id}>₹{bank.balance}</div>
                   ))}
                 </div>
                 <div className="flex flex-end">

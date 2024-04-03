@@ -29,7 +29,6 @@ const bankDetails = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
           `${serverUrl}/api/getBankDetails`
         );
         setBankDetails(bankDetailsResponse.data);
-        console.log(bankDetailsResponse.data);
         setLoadingBankData(true);
       } catch (error) {
         console.error(error);
@@ -129,7 +128,6 @@ const bankDetails = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
         return updatedData;
       });
   
-      console.log(updateOrg.data);
       setEditMode(false); // Disable edit mode after update
     } catch (error) {
       console.error(error);
@@ -197,7 +195,6 @@ const bankDetails = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
         return updatedData;
       });
 
-      console.log(updateBank.data);
       setEditModeBank(false); // Disable edit mode after update
     } catch (error) {
       console.error(error);

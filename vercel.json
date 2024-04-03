@@ -1,0 +1,16 @@
+{
+    "routes":[
+        {
+            "src":"/",
+            "dest":"/"
+        },
+        {
+            "src":"/donation",
+            "dest":"/"
+        },
+        {
+            "src":"/spends",
+            "dest":"/"
+        }
+    ]
+}

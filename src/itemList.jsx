@@ -47,7 +47,6 @@ const itemList = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
           `${serverUrl}/api/getOccassion`
         );
         setOccassionData(occassionDataResponse.data);
-        console.log(occassionDataResponse.data);
       } catch (error) {
         console.error(error);
       }

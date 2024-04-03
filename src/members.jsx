@@ -257,7 +257,7 @@ const members = ({serverUrl}) => {
   value={memberRole}
   onChange={(e) => setMemberRole(e.target.value)}
 >
-  <option value="" disabled selected>
+  <option value="" disabled>
     Choose Member Role
   </option>
   {memberRoleData.map((memberRole) => {

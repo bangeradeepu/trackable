@@ -118,7 +118,7 @@ export default function App() {
           <div className="pd1">
             <div className="oqfg">
             <div className="flex align-item-center space-between">
-              <div className="f14">Login</div>
+              <div className="f14">Login please</div>
               <div className="flex align-item-center">
               <img src="https://purepng.com/public/uploads/large/purepng.com-flower-vectorflower-clipart-vector-floral-96152467976291dkh.png" className="logoImg" alt="" />
               <div className="primary f14">Trackable</div>
@@ -137,7 +137,6 @@ export default function App() {
                   Cookies.set('givenName',credentialResponseDecoded.given_name);
                   Cookies.set('subId',credentialResponseDecoded.sub);
                   Cookies.set('picture',credentialResponseDecoded.picture)
-                  console.log(credentialResponseDecoded);
                   setCred(credentialResponseDecoded.email);
                 }}
                 onError={() => {
@@ -150,10 +149,10 @@ export default function App() {
               </div>
               <div className="text-align-center mt-2">OR</div>
              <div className="flex space-evenly mt-2">
-             <input type="text" name="" className="loginBar" id=""placeholder="Enter Email address" />
+             <input type="text" name="" className="loginBar" placeholder="Enter Email address" />
              </div>
              <div className="flex space-evenly mt-2">
-             <input type="password" name="" className="loginBar" id=""placeholder="Password" />
+             <input type="password" name="" className="loginBar" placeholder="Password" />
              </div>
              <div className="flex space-evenly">
              <button className="button c-pointer mt-1">Next</button>
@@ -240,58 +239,4 @@ export default function App() {
     </div>
   );
 }
-
-
-
-// import React, { useEffect, useState } from 'react';
-// import { jwtDecode } from "jwt-decode";
-// import { GoogleLogin } from '@react-oauth/google';
-// import Cookies from 'js-cookie';
-// import { useGoogleLogin } from '@react-oauth/google';
-
-// function App() {
-//   const login = useGoogleLogin({
-//     onSuccess: tokenResponse => setCred(tokenResponse.access_token),
-//   });
-//   const [cred,setCred] = useState([]);
-//   const [cookieEmail,setCookieEmail] = useState('');
-//   useEffect(() =>{
-//     const emailCookie = Cookies.get('email');
-//     if (emailCookie) {
-//       // If the 'email' cookie exists, set the email in the component state
-//       setCookieEmail(emailCookie);
-//     } 
-//   })
-//   const handleLogout = () => {
-//     // Clear the 'email' cookie to kill the session
-//     Cookies.remove('email');
-//     // Reset the state
-//     setCred('');
-//   };
-//   return (
-// <div>
-      
-// <GoogleLogin
-//   onSuccess={(credentialResponse) => {
-//     const credentialResponseDecoded = jwtDecode(credentialResponse.credential);
-//     console.log(credentialResponseDecoded)
-//     console.log()
-//     Cookies.set('email', credentialResponseDecoded.picture);
-//     setCred(credentialResponseDecoded.email);
-//     console.log(credentialResponse);
-//   }}
-//   onError={() => {
-//     console.log('Login Failed');
-//   }}
-// />
-// <button onClick={() => login()}>Login</button>
-// {cred}
-// {cookieEmail}
-// <img src={cookieEmail} alt="" />
-// {cookieEmail && <button onClick={handleLogout}>Logout</button>}
-// </div>
-//   );
-// }
-
-// export default App;
 

@@ -92,7 +92,6 @@ const spends = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
       totalSpending[year] = (totalSpending[year] || 0) + spendsAmount;
     });
 
-    console.log("Total Spending for Year:", totalSpending);
 
     setTotalSpendingForYear(totalSpending);
   }, [spends]);
@@ -145,7 +144,6 @@ const spends = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
   };
 
   const handleAddSpends = async () => {
-    console.log(spendOccassionAdd);
     if(spendsType === '' ||   spendsName === '' || spendsAmount === '' || spendOccassionAdd === '' || spendsQuantity ===''){
       setShowError('Pelase fill all feilds!');
       const timeoutId = setTimeout(() => {
@@ -218,7 +216,6 @@ const spends = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
       totalSpendingCopy[updatedYear] =
         totalSpendingCopy[updatedYear] - oldSpendsAmount + editSpendsAmount;
       setTotalSpendingForYear(totalSpendingCopy);
-      console.log(totalSpendingCopy);
 
       // Make the API call
       await axios.put(`${serverUrl}/api/editSpends/${id}`, {

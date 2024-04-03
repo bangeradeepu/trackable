@@ -11,9 +11,8 @@ const home = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
   useEffect(() => {
     const fetchBankData = async () => {
       try {
-        const bankDetailsResponse = await axios.get(`${process.env.REACT_APP_API_URL}/api/getBankDetails`);
+        const bankDetailsResponse = await axios.get(`${serverUrl}/api/getBankDetails`);
         setBankDetails(bankDetailsResponse.data);
-        console.log(bankDetailsResponse.data);
       } catch (error) {
         console.error(error);
       }
