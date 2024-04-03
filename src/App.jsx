@@ -118,7 +118,7 @@ export default function App() {
           <div className="pd1">
             <div className="oqfg">
             <div className="flex align-item-center space-between">
-              <div className="f14">Login please</div>
+              <div className="f14">Login</div>
               <div className="flex align-item-center">
               <img src="https://purepng.com/public/uploads/large/purepng.com-flower-vectorflower-clipart-vector-floral-96152467976291dkh.png" className="logoImg" alt="" />
               <div className="primary f14">Trackable</div>
