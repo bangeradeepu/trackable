@@ -223,7 +223,7 @@ body::-webkit-scrollbar-thumb {
 }
 .txtBox{
   padding: 0.8vw;
-  width: 34vw;
+  width: 94%;
   border-radius: 0.5vw;
   outline-color: #00684A;
   border: 2px solid #aeaeae;
@@ -239,7 +239,7 @@ body::-webkit-scrollbar-thumb {
 }
 .txtBoxDD{
   padding: 0.8vw;
-  width: 35.8vw;
+  width: 100%;
   border-radius: 0.5vw;
   outline-color: #00684A;
   border: 2px solid #aeaeae;

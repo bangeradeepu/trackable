@@ -354,7 +354,7 @@ useEffect(() => {
   fetchMemberData();
 }, []);
 const handleAddDonationFirst = () => {
-  window.location.reload();
+  // window.location.reload();
   handleAddDonation();
 }
   return (
