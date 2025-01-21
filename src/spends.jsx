@@ -426,7 +426,7 @@ const spends = ({emailId,gPicture,gSubId,gName,serverUrl}) => {
   };
 
   const handleAddSpendsFirst = () =>  {
-    window.location.reload();
+    // window.location.reload();
     handleAddSpends();
   }
   return (
